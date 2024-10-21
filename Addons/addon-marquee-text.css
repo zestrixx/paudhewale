@@ -46,7 +46,7 @@
 
 @keyframes marquee-right {
   0% {
-    transform: translateX(calc(-100% + 1rem));
+    transform: translateX(calc(-100% - 1rem));
   }
   100% {
     transform: translateX(0);
