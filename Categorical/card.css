@@ -1,0 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.card{
+  /* box-shadow: 0 2px 20px lightgray; */
+  cursor: pointer;
+  transition: transform 100ms ease-in;
+  height: 280px;
+
+}

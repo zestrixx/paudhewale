@@ -1,0 +1,134 @@
+.addon-5-category {
+  margin: 3rem 0;
+}
+
+.addon-5c-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.addon-sm-categories {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.addon-lg-category,
+.addon-sm-category {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid lightgray;
+}
+
+.addon-5c-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 1rem 0 2rem 0;
+}
+
+.addon-5c-title {
+  position: absolute;
+  top: 20px;
+  left: 24px;
+  right: 24px;
+  width: fit-content;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0;
+  background: linear-gradient(to right, #363636 0%, #363636 100%);
+  background-repeat: no-repeat;
+  background-position: left 100%;
+  transition-duration: .8s;
+  background-size: 0 8%;
+}
+
+.addon-lg-category img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  transition: all .4s ease-in-out;
+}
+
+.addon-lg-category:hover img {
+  transform: scale(1.1);
+}
+
+.addon-lg-category:hover .addon-5c-title {
+  background-size: 100% 8%;
+}
+
+.addon-sm-category img {
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+  transition: all .4s ease-in-out;
+}
+
+.addon-sm-category:hover img {
+  transform: scale(1.1);
+}
+
+.addon-sm-category:hover .addon-5c-title {
+  background-size: 100% 8%;
+}
+
+@media (width<=1200px) {
+  .addon-5-category {
+    margin: 2rem 0;
+  }
+
+  .addon-5c-heading {
+    font-size: 2.3rem !important;
+  }
+}
+
+@media (width<=992px) {
+  .addon-5-category {
+    margin: 2.5rem 0 3rem 0;
+  }
+
+  .addon-5c-heading {
+    font-size: 2rem !important;
+  }
+
+  .addon-5c-title {
+    font-size: 18px;
+    top: 10px;
+    left: 12px;
+  }
+
+  .addon-5c-container,
+  .addon-sm-categories {
+    gap: 1.3rem;
+  }
+}
+
+@media (width<=768px) {
+  .addon-5c-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .addon-5c-heading {
+    font-size: 1.8rem !important;
+  }
+
+  .addon-sm-categories {
+    gap: 1rem;
+  }
+}
+
+@media (width<=576px) {
+  .addon-5-category {
+    padding: 0 16px;
+  }
+}
+
+@media (width<=476px) {
+  .addon-5c-heading {
+    font-size: 1.6rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+}

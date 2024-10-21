@@ -1,0 +1,99 @@
+.addon-flex {
+  display: flex;
+}
+
+.addon-flex-col {
+  flex-direction: column;
+}
+
+.addon-bg-blur {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #1E1E1E;
+}
+
+.addon-slider-bg-img {
+  background-image: url('../Assets/diya-gif-2.gif');
+  background-size: 140px auto;
+  background-position: center 340px;
+  background-repeat: repeat-x;
+}
+
+.addon-slider-wrapper {
+  background-color: #fff9fa;
+  row-gap: 3rem;
+  margin-top: 2rem;
+}
+
+.addon-heding {
+  margin: 2rem 0 0 0;
+  text-align: center;
+  font-size: clamp(1.8rem, 3vw, 2.2rem);
+}
+
+.addon-slider {
+  column-gap: 15px;
+  padding: 0px 20px 60px 20px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  /* -ms-overflow-style: none;
+  scrollbar-width: none; */
+}
+
+.addon-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.addon-slide {
+  background-color: #f0f0f0;
+  cursor: grab;
+  border: 1px solid #ccc;
+  /* scroll-snap-align: start; */
+}
+
+.addon-slide-content {
+  width: 250px;
+  height: 300px;
+  position: relative;
+}
+
+.addon-slide-sq {
+  width: 250px;
+  height: 250px;
+}
+
+.addon-slide-content img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.addon-slide-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@media (width<=476px) {
+  .addon-slider-bg-img {
+    background-position: center 330px;
+    background-size: 100px auto;
+  }
+
+  .addon-slider {
+    column-gap: 10px;
+    padding-bottom: 50px;
+  }
+
+  .addon-slide-sq {
+    width: 200px;
+    height: 200px;
+  }
+}

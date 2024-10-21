@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparkle</title>
+    <style>
+      .addon-sparkle {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-size: cover;
+        background-image: url('../Assets/sparkle.png');
+        opacity: 0;
+        animation: sparkle 1s ease-in-out;
+      }
+
+      @keyframes sparkle {
+        0% {
+          opacity: 1;
+          transform: scale(1);
+        }
+
+        100% {
+          opacity: 0;
+          transform: scale(0);
+        }
+      }
+      *{
+        margin: 0;
+      }
+      .header{
+        width: 100%;
+        height: 80px;
+        background-color: lightpink;
+        position: relative;
+        background-image: url('../Assets/popper-gif.gif');
+        background-position: center calc(100% + 40px);
+        background-size: 100px 170px;
+      }
+    </style>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="main-header">
+      </div>
+    </div>
+    <script>
+      $(document).mousemove(function (e) {
+        var sparkle = $('<div class="addon-sparkle"></div>');
+
+        $('body').append(sparkle);
+        sparkle.css({
+          left: e.pageX-15,
+          top: e.pageY-15
+        });
+
+        // Remove the sparkle from the DOM after the animation ends
+        sparkle.on('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function () {
+          $(this).remove();
+        });
+      });
+    </script>
+  </body>
+
+</html>

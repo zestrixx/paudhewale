@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ</title>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="addon-faq.css">
+  </head>
+
+  <body>
+    <div class="addon-faq-section">
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#fae6c3" fill-opacity="1"
+          d="M0,64L60,64C120,64,240,64,360,80C480,96,600,128,720,117.3C840,107,960,53,1080,58.7C1200,64,1320,128,1380,160L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+        </path>
+      </svg>
+
+      <h1 class="addon-faq-heading">Frequently Asked Questions.</h1>
+      <div class="addon-faq-container container">
+
+        <div class="addon-faq-items">
+
+          <div class="addon-faq active">
+            <h3 class="addon-faq-title">
+              1. When will my plants be delivered ?
+            </h3>
+            <p class="addon-faq-text">We offer fastest delivery in Live Plants
+              category. However, due to any unforeseen events or circumstances,
+              the delivery can get delayed. We will inform you regarding the
+              same. But we assure you that we keep your lovely plants safe and
+              healthy and they will be worth the wait .</p>
+            <button class="addon-faq-toggle">&#8595
+            </button>
+          </div>
+
+          <div class="addon-faq">
+            <h3 class="addon-faq-title">
+              2. My order was due for delivery yesterday, but I have still not
+              received it ?
+            </h3>
+            <p class="addon-faq-text">Kindly drop us an email on <span
+                style="color: #3598db;"><a
+                  href="mailto:support@paudhewale.com">support@paudhewale.com</a></span>
+              with your order details so we can look into it.</p>
+            <button class="addon-faq-toggle">&#8595
+            </button>
+          </div>
+
+          <div class="addon-faq">
+            <h3 class="addon-faq-title">
+              3. Can I place an order on call ?
+            </h3>
+            <p class="addon-faq-text">To ensure a smooth order experience, we do
+              not offer on call order option. You can checkout our website and
+              order your favorite products after looking at the pictures and the
+              description.</p>
+            <button class="addon-faq-toggle">&#8595
+            </button>
+          </div>
+
+          <div class="addon-faq">
+            <h3 class="addon-faq-title">
+              4. What is the Return and Replacement Policy ?
+            </h3>
+            <p class="addon-faq-text">We at PaudheWale keep customer
+              satisfaction and best quality delivery as our topmost priorities.
+              We offer a two day window for replacement. In case you receive
+              wrong products, or damaged products, kindly drop in an email to
+              <span style="color: #3598db;"><a
+                  href="mailto:support@paudhewale.com">support@paudhewale.com</a></span>
+              😊</p>
+            <button class="addon-faq-toggle">&#8595
+            </button>
+          </div>
+
+          <div class="addon-faq">
+            <h3 class="addon-faq-title">
+              5. What are your delivery charges ?
+            </h3>
+            <p class="addon-faq-text">We are pleased to offer free delivery for
+              orders exceeding Rs 499. This ensures that you can enjoy
+              complimentary shipping on purchases above this threshold.</p>
+            <button class="addon-faq-toggle">&#8595
+            </button>
+          </div>
+
+          <div class="addon-faq">
+            <h3 class="addon-faq-title">
+              6. Does PaudheWale offers Cash On Delivery (COD)? Can I pay on
+              delivery ?
+            </h3>
+            <p class="addon-faq-text">To ensure the well-being of our plants, we
+              no longer offer Cash on Delivery (COD) for deliveries. This
+              decision aims to prevent delays and uncertainties that may impact
+              the plant's condition. We provide secure online payment options
+              for a seamless and timely experience. </p>
+            <button class="addon-faq-toggle">&#8595
+            </button>
+          </div>
+
+          <div class="addon-faq">
+            <h3 class="addon-faq-title">
+              7. How can I change the delivery address / I entered incomplete
+              delivery address ?
+            </h3>
+            <p class="addon-faq-text">Kindly drop an email to <span
+                style="color: #3598db;"><a
+                  href="mailto:support@paudhewale.com">support@paudhewale.com</a></span>
+              with your order number and your complete / updated delivery
+              address.</p>
+            <button class="addon-faq-toggle">&#8595
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="addon-faq.js"></script>
+
+
+  <!-- * vue starts -->
+  <!-- <section class="addon-faq-section">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#fae6c3" fill-opacity="1"
+        d="M0,64L60,64C120,64,240,64,360,80C480,96,600,128,720,117.3C840,107,960,53,1080,58.7C1200,64,1320,128,1380,160L1440,192L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+      </path>
+    </svg>
+    <h1 class="addon-faq-heading">Frequently Asked Questions.</h1>
+    <div class="addon-faq-container container">
+      <div class="addon-faq-items">
+        <div v-for="(faq, index) in faqs" :key="index" :class="{'addon-faq': true, 'active': faq.active}" @click="toggleFaq(index)">
+          <h3 class="addon-faq-title">{{ faq.question }}</h3>
+          <p class="addon-faq-text">{{ faq.answer }}</p>
+          <button class="addon-faq-toggle">&#8595</button>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+</html>

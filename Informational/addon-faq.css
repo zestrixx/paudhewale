@@ -1,0 +1,221 @@
+:root {
+  --accent-color: #ffc629;
+}
+
+.addon-faq-section {
+  margin: 6rem 0 0 0;
+  background: #2e514a;
+  color: white;
+}
+
+/* .addon-faq-section svg {
+  margin-top: -6rem;
+} */
+
+.addon-faq-section svg path {
+  fill: #ffffff !important;
+}
+
+.addon-faq-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addon-faq-heading {
+  margin: -150px 0 50px;
+  text-align: center;
+  font-size: 32px;
+}
+
+.addon-faq-items {
+  grid-area: faqItems;
+  width: 100%;
+  margin: 0 0 4rem 0;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  /* padding: 0 50px; */
+}
+
+.addon-faq {
+  box-sizing: border-box;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.addon-faq:not(:first-child) {
+  /* xmas addition */
+  /* border-top: 1px solid #981218; */
+  /* xmas addition ends */
+  border-top: 1px solid #43756b;
+}
+
+.addon-faq-title {
+  margin: 0 35px 0 0;
+  font-size: 18px;
+}
+
+.addon-faq-text {
+  margin: 0 0 0 0;
+  line-height: 1.5rem;
+  opacity: 0;
+  color: black;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 50ms linear;
+  will-change: max-height;
+}
+
+.addon-faq.active {
+  background-color: #f8f8f8;
+  box-shadow: inset 4px 0px 0px 0px var(--accent-color);
+}
+
+.addon-faq.active .addon-faq-title {
+  color: #2e514a;
+}
+
+.addon-faq.active .addon-faq-text {
+  font-size: 15px;
+  opacity: 1;
+  margin: 30px 0 0;
+  max-height: 9em;
+  transition: all 50ms linear;
+  will-change: max-height;
+}
+
+.addon-faq-toggle {
+  background-color: transparent;
+  border: 1px solid #e6e6e6;
+  color: inherit;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  padding-top: 3px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  height: 30px;
+  width: 30px;
+  transition: 0.3s ease;
+}
+
+.addon-faq-toggle:focus {
+  outline: none;
+}
+
+.addon-faq.active .addon-faq-toggle {
+  transform: rotate(180deg);
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: black;
+}
+
+@media (width<=1400px) {
+  .addon-faq-heading {
+    margin: -130px 0 50px;
+  }
+}
+
+@media (width<=1200px) {
+  .addon-faq-heading {
+    margin: -110px 0 50px;
+  }
+}
+
+@media (width<=992px) {
+  .addon-faq-heading {
+    margin: -80px 0 50px;
+    font-size: 26px !important;
+  }
+
+  .addon-faq-section {
+    margin: 7rem 0 0 0 !important;
+  }
+
+  .addon-faq.active .addon-faq-text {
+    font-size: unset !important;
+  }
+}
+
+@media (width<=850px) {
+  .addon-faq-heading {
+    margin: -60px 0 50px;
+  }
+}
+
+@media (width<=768px) {
+  .addon-faq-heading {
+    margin: -50px 0 50px;
+  }
+
+  .addon-faq-section {
+    margin: 8rem 0 0 0 !important;
+  }
+
+  .addon-faq-title {
+    font-size: unset !important;
+  }
+}
+
+@media (width<=576px) {
+  .addon-faq-heading {
+    margin: -40px 0 45px;
+    font-size: 24px !important;
+  }
+
+  .addon-faq.active .addon-faq-text {
+    max-height: 14em !important;
+  }
+
+  .addon-faq-container {
+    padding: 10px !important;
+  }
+}
+
+@media (width<=476px) {
+  .addon-faq-heading {
+    margin: -30px 0 45px;
+    font-size: 22px !important;
+  }
+
+  .addon-faq {
+    padding: 22px !important;
+  }
+
+  .addon-faq-toggle {
+    top: 20px !important;
+  }
+}
+
+@media (width<=420px) {
+  .addon-faq-heading {
+    margin: -20px 0 40px;
+    font-size: 20px !important;
+  }
+
+  .addon-faq-title {
+    margin-right: 40px !important;
+    font-size: 15px !important;
+  }
+
+  .addon-faq.active .addon-faq-text {
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+  }
+}
+
+@media (width<=376px) {
+  .addon-faq-heading {
+    margin: -10px 0 40px;
+  }
+
+  .addon-faq-items {
+    margin: 0 0 3rem 0 !important;
+  }
+}

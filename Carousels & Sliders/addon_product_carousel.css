@@ -1,0 +1,129 @@
+.addon-product-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30em;
+  margin: 0;
+  background: #eceffc;
+}
+
+.addon-pc-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.addon-pc-container .addon-pc-slides {
+  position: relative;
+  top: -5em;
+  left: 10em;
+}
+
+.addon-pc-container .addon-pc-slides img {
+  position: absolute;
+  width: 450px;
+  height: auto;
+  opacity: 0;
+  z-index: 9999;
+}
+
+.addon-pc-container .addon-pc-slides img.active {
+  opacity: 1;
+}
+
+.addon-pc-container .addon-pc-overlays {
+  position: relative;
+  width: 45em;
+  height: 18em;
+}
+
+.addon-pc-container .addon-pc-overlays .addon-pc-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bar-color);
+  transform-origin: left;
+}
+
+.addon-pc-container .addon-pc-nav-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0 0 0 6em;
+  list-style-type: none;
+}
+
+.addon-pc-container .addon-pc-nav-links .addon-pc-nav-link {
+  font-size: 2rem;
+  font-family: Lora, serif;
+  line-height: 2;
+  text-decoration: none;
+  color: #7f8c8d;
+  transition: 0.3s;
+}
+
+.addon-pc-container .addon-pc-nav-links .addon-pc-nav-link:hover {
+  color: #1c1e1f;
+}
+
+.addon-pc-container .addon-pc-nav-links .addon-pc-nav-link.active {
+  color: black;
+  pointer-events: none;
+}
+
+@media (max-width: 1048px) {
+  .addon-product-carousel {
+    min-height: 25em;
+  }
+  .addon-pc-container .addon-pc-slides img {
+    width: 350px;
+  }
+  .addon-pc-container .addon-pc-slides {
+    position: relative;
+    top: -3em;
+    left: 6em;
+  }
+  .addon-pc-container .addon-pc-overlays {
+    width: 35em;
+    height: 16em;
+  }
+  .addon-pc-container .addon-pc-nav-links .addon-pc-nav-link {
+    font-size: 2rem;
+    line-height: 1.8;
+  }
+}
+
+@media (max-width: 880px) {
+  .addon-product-carousel {
+    min-height: 22em;
+  }
+  .addon-pc-container .addon-pc-slides img {
+    width: 300px;
+  }
+  .addon-pc-container .addon-pc-slides {
+    position: relative;
+    top: -2em;
+    left: 6em;
+  }
+  .addon-pc-container .addon-pc-overlays {
+    width: 30em;
+    height: 15em;
+  }
+  .addon-pc-container .addon-pc-nav-links {
+    padding: 0 0 0 4em;
+  }
+  .addon-pc-container .addon-pc-nav-links .addon-pc-nav-link {
+    font-size: 1.8rem;
+    line-height: 1.8;
+  }
+}
+
+@media (max-width: 767px) {
+  .addon-product-carousel{
+    display: none;
+  }
+}

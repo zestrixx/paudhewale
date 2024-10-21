@@ -1,0 +1,224 @@
+/* addon cards start */
+.addon-cards {
+  margin: 0 0 2rem 0;
+  background-color: #fae6c3;
+  padding: 20px 20px 80px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.addon-cards-heading {
+  text-align: center;
+  font-size: 2.8rem;
+  margin: 1rem 0 4rem 0;
+}
+
+.addon-cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+}
+
+.addon-card {
+  display: flex;
+  position: relative;
+  height: 397px;
+  border-radius: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0px 38px 92px -40px rgb(164, 152, 109);
+}
+
+.addon-card img {
+  width: 100%;
+  object-fit: cover;
+  transition: .5s ease;
+}
+
+.addon-card .addon-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(46, 81, 74, 0.7999532576702556) 0%, rgba(46, 81, 74, 0.8027543781184349) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: translateY(100%);
+  transition: .5s ease;
+}
+
+.addon-content h4 {
+  color: white;
+  font-size: 3rem;
+  margin: 0 0 1rem 0;
+}
+
+.addon-content p {
+  color: white;
+  font-size: 1.4rem;
+  margin: 0.3rem 0 1;
+  padding: 0 3rem;
+}
+
+.addon-card:hover img {
+  transform: scale(1.1);
+}
+
+.addon-card:hover .addon-content {
+  transform: translateY(0);
+}
+
+@media only screen and (max-width : 1200px) {
+
+  .addon-card {
+    height: 304px !important;
+  }
+
+  .addon-cards-heading {
+    font-size: 2.5rem !important;
+    margin-bottom: 3rem !important;
+  }
+
+  .addon-content h4 {
+    font-size: 2.4rem !important;
+  }
+
+  .addon-content p {
+    font-size: 1.2rem !important;
+  }
+
+  .addon-cards {
+    padding-bottom: 70px !important;
+  }
+}
+
+@media only screen and (max-width : 992px) {
+
+  .addon-card {
+    height: 222px !important;
+  }
+
+  .addon-cards-heading {
+    font-size: 2.3rem !important;
+  }
+
+  .addon-content h4 {
+    font-size: 1.8rem !important;
+    margin-bottom: 0px !important;
+  }
+
+  .addon-content p {
+    display: none;
+  }
+}
+
+@media only screen and (max-width : 768px) {
+
+  .addon-cards-container {
+    gap: 1.5rem !important;
+  }
+
+  .addon-cards-heading {
+    font-size: 2rem !important;
+  }
+
+  .addon-content h4 {
+    font-size: 1.3rem !important;
+  }
+
+  .addon-card {
+    height: 167px !important;
+  }
+
+  .addon-card .addon-content {
+    transform: translateY(0) !important;
+    height: 60px !important;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .addon-cards {
+    padding-bottom: 50px !important;
+  }
+
+  .addon-card {
+    height: 300px !important;
+    width: 300px !important;
+  }
+
+  .addon-cards-container {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .addon-cards-heading {
+    margin-bottom: 2rem !important;
+  }
+
+  .addon-card .addon-content {
+    height: 90px !important;
+  }
+
+  .addon-content h4 {
+    font-size: 2rem !important;
+  }
+
+}
+
+@media only screen and (max-width : 476px) {
+
+  .addon-card {
+    height: 290px !important;
+    width: 350px !important;
+  }
+
+  .addon-card .addon-content {
+    height: 75px !important;
+  }
+
+  .addon-cards-heading {
+    font-size: 1.8rem !important;
+  }
+
+  .addon-content h4 {
+    font-size: 1.8rem !important;
+  }
+
+}
+
+@media (max-width: 372px) {
+  .addon-card {
+    height: 280px !important;
+    width: 310px !important;
+  }
+
+  .addon-card .addon-content {
+    height: 70px !important;
+  }
+
+  .addon-cards-heading {
+    font-size: 1.6rem !important;
+    margin-bottom: 40px !important;
+  }
+}
+
+@media (max-width: 302px) {
+  .addon-card {
+    height: 220px !important;
+    width: 250px !important;
+  }
+
+  .addon-content h4 {
+    font-size: 1.5rem !important;
+  }
+}
+
+/* responsive end */

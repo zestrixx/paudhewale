@@ -1,0 +1,181 @@
+.addon-main-carousel {
+  width: 100%;
+  position: relative;
+  margin: 0 0 3rem 0;
+}
+
+.addon-mc-slides {
+  display: none;
+  height: 40rem;
+  position: relative;
+}
+
+.addon-mc-slide-content {
+  position: absolute;
+}
+
+.addon-mc-slide-content-1 {
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  line-height: clamp(2rem, 5.5vw, 5.5rem);
+  width: 100%;
+}
+
+.addon-mc-slide-content-1 .slide-top-text {
+  font-size: clamp(1.2rem, 4vw, 5rem);
+  color: white;
+}
+
+.addon-mc-slide-content-1 .slide-middle-text {
+  font-size: clamp(1.8rem, 5.5vw, 5.5rem);
+  color: #ffc629;
+}
+
+.addon-mc-slide-content-1 .slide-bottom-text {
+  font-size: clamp(1.2rem, 4vw, 5rem);
+  color: white;
+}
+
+.addon-mc-slide-content-2 {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  line-height: clamp(2rem, 7vw, 7rem);
+  width: 100%;
+}
+
+.addon-mc-slide-content-2 .slide-top-text {
+  font-size: clamp(1.2rem, 4vw, 4rem);
+  color: white;
+}
+
+.addon-mc-slide-content-2 .slide-middle-text {
+  font-size: clamp(3rem, 10vw, 10rem);
+  color: red;
+}
+
+.addon-mc-slide-content-2 .slide-bottom-text {
+  font-size: clamp(1.2rem, 4vw, 4rem);
+  color: white;
+  line-height: clamp(2.5rem, 10vw, 10rem);
+}
+
+.addon-mc-slide-content-3 {
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: clamp(1, 5vw, 5.5);
+  width: 100%;
+}
+
+.addon-mc-slide-content-3 .slide-top-text {
+  font-size: clamp(2.5rem, 8vw, 8rem);
+  color: #ffc629;
+}
+
+.addon-mc-slide-content-3 .slide-middle-text {
+  font-size: clamp(1rem, 2.5vw, 2.5rem);
+  color: white;
+}
+
+.addon-mc-slide-content-3 .slide-bottom-text {
+  font-size: clamp(1rem, 2.5vw, 2.5rem);
+  color: white;
+}
+
+.addon-mc-prev,
+.addon-mc-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.addon-mc-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.addon-mc-prev:hover,
+.addon-mc-next:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+.addon-mc-fade {
+  animation-name: addon-mc-fade;
+  animation-duration: 1.5s;
+}
+
+.addon-mc-slides img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes addon-mc-fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@media (576px<width<=992px) {
+  .addon-mc-slides {
+    height: 30rem !important;
+  }
+
+  addon-main-carousel {
+    margin: 0 0 1.8rem 0 !important;
+  }
+}
+
+@media (width<=768px) {
+  .addon-mc-slides {
+    height: 25rem !important;
+  }
+}
+
+@media (width<=576px) {
+  .addon-mc-slides {
+    height: 20rem !important;
+  }
+
+  .addon-main-carousel {
+    margin: 0 0 1.5rem 0 !important;
+  }
+}
+
+@media (width<=476px) {
+  .addon-mc-slides {
+    height: 15rem !important;
+  }
+
+  .addon-main-carousel {
+    margin: 0 0 1rem 0 !important;
+  }
+}

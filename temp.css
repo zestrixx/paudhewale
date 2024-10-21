@@ -1,0 +1,21 @@
+.addon{
+  width: 100%;
+  height: 20vh;
+  border: 1px solid red;
+  /* background-image: url('./Assets/Diwali/popper-gif-4.gif'); */
+  background-size: 250px 250px;
+  background-position: 10px center;
+  background-repeat: repeat-x;
+  background-repeat: no-repeat;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.addon dotlottie-player{
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+}

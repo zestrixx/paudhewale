@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="addon-2-columns.css">
+  </head>
+
+  <body>
+    <section class="addon-two-columns">
+      <h1>New Arrivals</h1>
+      <div class="tc-grid-wrapper container">
+        <div class="tc-product-grid">
+          <div class="tc-product-item">
+            <div class="tc-product-img">
+              <img
+                src="https://www.dhresource.com/webp/m/0x0/f2/albu/g18/M00/F4/37/rBNaNmGvLxmAbOoDAAGYuv2Skos478.jpg"
+                alt="Product 1">
+              <div class="tc-product-content">
+                <h3>Product 1</h3>
+              </div>
+            </div>
+          </div>
+          <div class="tc-product-item">
+            <div class="tc-product-img">
+              <img
+                src="https://www.egiftmart.com/uploaded_files/itempic/plants-1.jpg"
+                alt="Product 1">
+              <div class="tc-product-content">
+                <h3>Product 1</h3>
+              </div>
+            </div>
+          </div>
+          <div class="tc-product-item">
+            <div class="tc-product-img">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmbKZCD1flNGN9WNhGcoCxLHpK2DBRgZbzDQguVoUgB6pEnxA6VHa0mmx4B1iBjXkAKlA&usqp=CAU"
+                alt="Product 1">
+              <div class="tc-product-content">
+                <h3>Product 1</h3>
+              </div>
+            </div>
+          </div>
+          <div class="tc-product-item">
+            <div class="tc-product-img">
+              <img
+                src="https://m.media-amazon.com/images/I/41hmBo2bSgL._AC_UF894,1000_QL80_.jpg"
+                alt="Product 1">
+              <div class="tc-product-content">
+                <h3>Product 1</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tc-featured-product">
+          <div class="tc-product-img">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0093/4785/8510/products/pp_21aw_010_sq_0643bdae-01ce-4ddb-8c5a-e565f238d55a.jpg?v=1662101120"
+              alt="Featured Product">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="addon-2-columns.js"></script>
+  </body>
+
+
+  <!--& vue js  -->
+  <!-- <section class="addon-two-columns">
+    <h1 class="addon-5c-heading">New Arrivals</h1>
+    <div class="tc-grid-wrapper container">
+      <div class="tc-product-grid" @mousedown="handleMouseDown"
+        @mouseleave="handleMouseLeave" @mouseup="handleMouseUp"
+        @mousemove="handleMouseMove" @touchstart="handleTouchStart"
+        @touchend="handleTouchEnd" @touchmove="handleTouchMove">
+        <div class="tc-product-item" v-for="(item, index) in items"
+          :key="index">
+          <div class="tc-product-img">
+            <img :src="item.img" :alt="item.name">
+            <div class="tc-product-content">
+              <h3>{{ item.name }}</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tc-featured-product">
+        <div class="tc-product-img">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0093/4785/8510/products/pp_21aw_010_sq_0643bdae-01ce-4ddb-8c5a-e565f238d55a.jpg?v=1662101120"
+            alt="Featured Product">
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!--& vue js  -->
+
+
+</html>

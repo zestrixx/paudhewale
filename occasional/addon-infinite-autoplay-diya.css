@@ -1,0 +1,126 @@
+.addon-infinite-autoplay {
+  margin-top: 20px;
+}
+
+/* xmas addition */
+.addon-ia-slide .xmas-santa {
+  height: 100%;
+}
+
+/* xmas end */
+
+/* diwali addition */
+.addon-infinite-autoplay-diya {
+  margin-bottom: 20px;
+}
+
+.addon-ia-slider-diya .addon-ia-slide-diya {
+  height: 110px !important;
+  width: 145px !important;
+  background-color: rgb(255, 251, 205) !important;
+}
+
+.addon-ia-slide-diya img {
+  width: 80px !important;
+}
+
+/* diwali end */
+
+.addon-ia-slider {
+  background: white;
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.addon-ia-slider::before,
+.addon-ia-slider::after {
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 160px;
+  z-index: 2;
+}
+
+.addon-ia-slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.addon-ia-slider::before {
+  left: 0;
+  top: 0;
+}
+
+.addon-ia-slider .addon-ia-slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(210px * 14);
+}
+
+.addon-ia-slider .addon-ia-slide {
+  height: 100px;
+  width: 210px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(232, 232, 255);
+}
+
+.addon-ia-slide img {
+  width: 180px;
+}
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-210px * 7));
+  }
+}
+
+@media (width<=476px) {
+  .addon-infinite-autoplay {
+    margin-top: 15px !important;
+  }
+
+  .addon-ia-slider::before,
+  .addon-ia-slider::after {
+    width: 40px !important;
+  }
+
+  .addon-ia-slider {
+    height: 70px !important;
+  }
+
+  .addon-ia-slider .addon-ia-slide {
+    height: 70px !important;
+    width: 160px !important;
+  }
+
+  .addon-ia-slide img {
+    width: 130px !important;
+  }
+
+  /* for diwali */
+  .addon-ia-slider-diya {
+    height: 70px !important;
+  }
+
+  .addon-ia-slider-diya .addon-ia-slide-diya {
+    height: 60px !important;
+    width: 80px !important;
+  }
+
+  .addon-ia-slide-diya img {
+    width: 55px !important;
+  }
+
+  /* diwali end */
+
+}

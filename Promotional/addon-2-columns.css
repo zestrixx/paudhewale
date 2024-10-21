@@ -1,0 +1,273 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.addon-two-columns{
+  background-color: #f1e8e9;
+  color: #01493E;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  padding: 0 0 2rem 0;
+}
+
+.addon-two-columns h1{
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.tc-grid-wrapper {
+  display: grid;
+  gap: 0.2rem;
+  grid-template-columns: 1fr 1.5fr;
+}
+
+.tc-product-grid {
+  display: grid;
+  padding: 10px;
+  gap: 0.5rem;
+  grid-template-columns: repeat(2, minmax(140px, 1fr));
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.tc-product-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  cursor: pointer;
+  border: 1px solid lightgray;
+  background-color: white;
+  position: relative;
+  scroll-snap-align: start;
+}
+
+.tc-product-img {
+  overflow: hidden;
+  height: 100%;
+  aspect-ratio: 3/1.9;
+  position: relative;
+}
+
+.tc-product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all .4s ease-in-out;
+}
+
+.tc-product-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #1E1E1E;
+  text-align: center;
+}
+
+.tc-product-content h3 {
+  font-size: clamp(0.9rem, 1.8vw, 1.4rem);
+  margin-bottom: 10px;
+}
+
+.tc-product-img:hover img {
+  transform: scale(1.08);
+}
+
+.tc-featured-product {
+  padding: 10px 10px 10px 0;
+}
+
+@media (max-width: 768px) {
+  .tc-grid-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 10px;
+  }
+
+  .tc-featured-product {
+    padding: 0px 0px 0px 0px;
+  }
+
+  .tc-featured-product .tc-product-img {
+    aspect-ratio: 3/2;
+  }
+
+  .tc-product-img {
+    aspect-ratio: 3/3;
+  }
+
+  .tc-product-grid {
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    -ms-overflow-style: unset;
+    scrollbar-width: unset;
+  }
+
+  .tc-product-item{
+    cursor: grab;
+  }
+
+}
+
+@media (max-width: 456px) {
+  .tc-grid-wrapper {
+    padding: 10px 10px 0 10px;
+  }
+
+  .addon-two-columns h1{
+    margin-top: 2rem;
+  }
+
+  .tc-product-grid {
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.addon-category-circle {
+  margin: 2rem 0 3rem 0;
+}
+
+.addon-cc-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.addon-cc-heading {
+  margin: 10px 0 50px;
+}
+
+.addon-cc-circles {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(8rem, 11rem));
+  gap: 4.5rem;
+  align-items: center;
+}
+
+.addon-cc-circle {
+  text-align: center;
+}
+
+.addon-cc-circle a img {
+  transition-property: all;
+  transition-timing-function: ease;
+  transition-duration: 0.4s;
+}
+
+.addon-cc-circle a img:hover {
+  transform: scale(1.15);
+}
+
+.addon-cc-circle img {
+  width: 100%;
+  border-radius: 50%;
+  padding: 5px;
+  border: 2px solid #b6ef2e;
+}
+
+.addon-cc-circle-heading {
+  font-size: 14px;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+@media (width<=1200px) {
+  .addon-cc-circles {
+    gap: 3.5rem;
+  }
+}
+
+@media (width<=992px) {
+  .addon-cc-circles {
+    grid-template-columns: repeat(3, minmax(9rem, 10rem));
+    column-gap: 9rem;
+    row-gap: 2.5rem;
+  }
+
+  .addon-cc-heading {
+    margin: 30px 0 50px;
+  }
+}
+
+@media (width<=768px) {
+  .addon-cc-circles {
+    grid-template-columns: repeat(3, minmax(8rem, 9rem));
+    column-gap: 6rem;
+    row-gap: 2.5rem;
+  }
+
+  .addon-cc-heading {
+    font-size: 24px;
+  }
+}
+
+@media (width<=576px) {
+  .addon-cc-circles {
+    grid-template-columns: repeat(2, minmax(8rem, 9rem));
+    column-gap: 8rem;
+  }
+
+  .addon-cc-heading {
+    font-size: 20px;
+  }
+}
+
+@media (width<=440px) {
+  .addon-cc-circles {
+    grid-template-columns: repeat(2, minmax(8rem, 9rem));
+    column-gap: 4.5rem;
+    row-gap: 2rem;
+  }
+  
+  .addon-cc-heading {
+    margin: 20px 0 35px;
+  }
+}
+
+@media (width<=380px) {
+  .addon-cc-circles {
+    grid-template-columns: repeat(2, minmax(7rem, 8rem));
+    column-gap: 2.8rem;
+    row-gap: 1.6rem;
+  }
+
+  .addon-cc-circle-heading {
+    font-size: 12px;
+  }
+
+  .addon-cc-heading {
+    text-align: center;
+  }
+}
+
+
+
+
+
+

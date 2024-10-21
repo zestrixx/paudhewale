@@ -1,0 +1,59 @@
+/*! unique strip start */
+
+.addon-strip {
+  padding: 20px 0px 32px 0px;
+}
+
+.addon-strip2 {
+  padding-bottom: 0px !important;
+}
+
+.addon-strip-img {
+  width: 100%;
+  transition: all .3s ease-in-out;
+}
+
+.addon-strip2-img {
+  box-shadow: 0px 21px 70px -24px rgba(0, 0, 0, 0.2);
+}
+
+.addon-strip1-img:hover {
+  scale: 1.01;
+  box-shadow: 0px 10px 58px -26px rgba(0, 0, 0, 0.2);
+}
+
+.addon-strip2-img:hover {
+  scale: 1.01;
+}
+
+/* unique strip end */
+
+@media only screen and (max-width : 476px) {
+
+  .addon-strip {
+    padding: 10px 0px 28px 0px;
+    height: 125px !important;
+  }
+
+  .addon-strip2 {
+    padding-bottom: 0px !important;
+    height: 100px !important;
+  }
+
+  .addon-strip-img {
+    height: 100% !important;
+    object-fit: cover !important;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
