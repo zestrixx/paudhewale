@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+.addon-font {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+}
+
 *{
   margin: 0;
   box-sizing: border-box;
 }
 
-.addon-scroll-wrapper{
+.addon-marquee-wrapper{
   background-color: #b6ef2e;
   height: 100px;
   display: flex;
@@ -11,43 +17,43 @@
   margin-top: 1rem;
 }
 
-.addon-scroll{
+.addon-marquee{
   display: flex;
   column-gap: 1rem;
   overflow: hidden;
 }
 
-.addon-scroll-content{
+.addon-marquee-content{
   display: flex;
   flex-shrink: 0;
   align-items: center;
   column-gap: 1rem;
-  animation: scroll 20s linear infinite;
+  animation: marquee 20s linear infinite;
 }
 
-@keyframes scroll {
+@keyframes marquee {
   0% {
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(calc(-100% - 1rem));
   }
 }
 
-.scroll-rev{
-  animation: scroll-rev 30s linear infinite;
+.marquee-right{
+  animation: marquee-right 20s linear infinite;
 }
 
-@keyframes scroll-rev {
+@keyframes marquee-right {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(calc(-100% + 1rem));
   }
   100% {
     transform: translateX(0);
   }
 }
 
-.addon-scroll-content h3{
+.addon-marquee-content h3{
   border: 1px solid black;
   margin: 0;
   border-radius: 50px;
@@ -56,3 +62,16 @@
   flex-shrink: 0;
   font-size: 22px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
