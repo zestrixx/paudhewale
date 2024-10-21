@@ -3,24 +3,29 @@
   box-sizing: border-box;
 }
 
+:root{
+  --col-gap: 2rem;
+}
+
 .addon-marquee-wrapper{
   background-color: #ffffff;
   height: 110px;
   display: flex;
   border: 2px solid black;
   margin-top: 1rem;
+  align-items: center;
 }
 
 .addon-marquee{
   display: flex;
-  column-gap: 1rem;
+  column-gap: var(--col-gap);
   overflow: hidden;
 }
 
 .addon-marquee-content{
   display: flex;
   align-items: center;
-  column-gap: 1rem;
+  column-gap: var(--col-gap);
   animation: marquee 20s linear infinite;
 }
 
@@ -29,7 +34,7 @@
     transform: translateX(0%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(calc(-100% - var(--col-gap)));
   }
 }
 
