@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.addon-scroll-wrapper{
+  background-color: #ffffff;
+  height: 110px;
+  display: flex;
+  border: 2px solid black;
+  margin-top: 1rem;
+}
+
+.addon-scroll{
+  display: flex;
+  column-gap: 1rem;
+  overflow: hidden;
+}
+
+.addon-scroll-content{
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.scroll-content-img img{
+  height: auto;
+  width: 180px;
+}
