@@ -86,9 +86,9 @@
 }
 
 @media (max-width: 600px) {
-  html {
+  /* html {
     font-size: 12px;
-  }
+  } */
 
   :root {
     --marquee-width: 100vw;
