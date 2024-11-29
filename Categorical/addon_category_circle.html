@@ -14,7 +14,10 @@
     <div class="addon-category-circle">
       <div class="addon-cc-container">
         <!-- <h1 class="addon-cc-heading">Explore Our Top Categories</h1> -->
-        <div class="addon-cc-circles">
+        <div class="addon-cc-circles" @mousedown="handleMouseDown"
+        @mouseleave="handleMouseLeave"
+        @mouseup="handleMouseUp"
+        @mousemove="handleMouseMove">
           <div class="addon-cc-circle addon-cc-circle1">
             <a href="https://plantsouk.com/categories/vastu-plants">
               <img src="https://iili.io/HvvlmIS.jpg" alt="">
@@ -55,6 +58,7 @@
       </div>
     </div>
     <!--! mayank end -->
+    <script src="addon-category-circle.js"></script>
   </body>
 
 </html>
