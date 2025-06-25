@@ -7,10 +7,10 @@
 
 :root {
   --marquee-width: 100%;
-  --marquee-height: 80px;
+  --marquee-height: 75px;
   /* --marquee-elements: 12; */
   /* defined with JavaScript */
-  --marquee-elements-displayed: 7;
+  --marquee-elements-displayed: 6;
   --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
   --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
 }
@@ -18,11 +18,11 @@
 .addon-marquee-icon {
   width: var(--marquee-width);
   height: var(--marquee-height);
-  background-color: #111;
-  color: #eee;
+  background-color: #01493E;
+  color: #f1e8e9;
   overflow: hidden;
   position: relative;
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
 .addon-marquee-icon:before,
@@ -74,7 +74,8 @@
   flex-shrink: 0;
   width: var(--marquee-element-width);
   max-height: 100%;
-  font-size: calc(var(--marquee-height)*3/4);
+  /* font-size: calc(var(--marquee-height)*3/4); */
+  font-size: 50px;
   /* 5rem; */
   white-space: nowrap;
 }
@@ -86,16 +87,19 @@
 }
 
 @media (max-width: 440px) {
-  .marquee-content-icon li {
-    font-size: 40px;
-  }
   :root {
     --marquee-width: 100vw;
-    --marquee-height: 60px;
-    --marquee-elements-displayed: 3;
+    --marquee-height: 45px;
+    --marquee-elements-displayed: 2.5;
+  }
+  .addon-marquee-icon{
+    margin: 0 0 1rem 0;
+  }
+  .marquee-content-icon li {
+    font-size: 28px;
   }
   .addon-marquee-icon:before,
   .addon-marquee-icon:after {
-    width: 5rem;
+    width: 3rem;
   }
 }

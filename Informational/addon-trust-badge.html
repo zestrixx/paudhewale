@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>trust badge</title>
+
+    <link rel="stylesheet" href="addon-trust-badge.css">
+
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- (Optional) Use CSS or JS implementation -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+      integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  </head>
+
+  <body>
+
+    <div class="trust-badge-wrapper pw-flex pw-gap-1 pw-flex-wrap">
+      <div class="pw-trust-badge pw-bgb-green" id="pwGiftBadge">
+        <i class="fa-solid fa-gift" style="color: #149253;"></i>
+
+        <span class="pw-trust-badge-text">Guaranteed Gift</span>
+      </div>
+
+      <div class="pw-trust-badge pw-bgb-red" id="pwInfoBadge">
+        <i class="fa-solid fa-circle-info" style="color: #ea4235;"></i>
+
+        <span class="pw-trust-badge-text">Refund/replacement guidelines aiure aiufek aubfbisb</span>
+      </div>
+    </div>
+
+
+
+    <!-- pw-modal -->
+    <div class="pw-modal-overlay" id="pwGiftBadgeModal">
+      <div class="pw-modal">
+        <div class="pw-modal-header">
+          <h3 class="pw-modal-title">Gift Coupon</h3>
+          <button class="pw-modal-close" id="closeGiftModalBtn">×</button>
+        </div>
+        <div class="pw-modal-body">
+          <p>
+            <span class="emoji">🎁</span>
+            <span class="content"><strong>Gift Coupons:</strong> Share your
+              unboxing video & receive an exclusive gift coupon as a
+              thank-you!</span>
+          </p>
+          <p>Share&nbsp <a
+              href="https://api.whatsapp.com/send/?phone=9101169296767"
+              style="color: blue;">here</a></p>
+        </div>
+        <div class="pw-modal-footer">
+          <button class="pw-btn" id="okGiftBtn">OK</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- pw-modal -->
+    <div class="pw-modal-overlay" id="pwInfoBadgeModal">
+      <div class="pw-modal">
+        <div class="pw-modal-header">
+          <h3 class="pw-modal-title">Refund/replacement Guidelines</h3>
+          <button class="pw-modal-close" id="closeModalBtn">×</button>
+        </div>
+        <div class="pw-modal-body">
+          <p>
+            <span class="emoji">🚫</span>
+            <span class="content"><strong>No Claims After Repotting:</strong>
+              If
+              a plant is transferred to another pot and gets damaged, no
+              claims
+              will be accepted. Re-potting is at your own risk.</span>
+          </p>
+
+          <p>
+            <span class="emoji">📸</span>
+            <span class="content"><strong>Unboxing Video Required:</strong> To
+              claim a refund or replacement for any product, you must share an
+              uncut unboxing video upon receiving the item.</span>
+          </p>
+
+          <p>
+            <span class="emoji">⏳</span>
+            <span class="content"><strong>Raise Claim Within 24
+                Hours:</strong>
+              To be
+              eligible for any refund/replacement, raise a claim within 24
+              hours
+              of delivery.(For plants only, for other categories the claim window is 5 days)</span>
+          </p>
+        </div>
+        <div class="pw-modal-footer">
+          <button class="pw-btn" id="okBtn">OK</button>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="addon-trust-badge.js"></script>
+  </body>
+
+</html>

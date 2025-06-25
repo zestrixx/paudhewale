@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xorvanta Tech</title>
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+
+  <body>
+    <div class="container">
+      <!-- Left Sidebar -->
+      <aside class="sidebar">
+        <!-- Categories Section -->
+        <div class="section">
+          <div class="section-header" data-section="categories">
+            <span>CATEGORIES</span>
+            <span class="chevron">▼</span>
+          </div>
+          <div class="section-content" id="categories-content">
+            <div class="category">
+              <div class="category-header">
+                <span>Plants</span>
+                <span class="plus-icon">+</span>
+              </div>
+              <div class="subcategories">
+                <a href="#">Indoor Plants</a>
+                <a href="#">Outdoor Plants</a>
+                <a href="#">Succulents</a>
+              </div>
+            </div>
+            <div class="category">
+              <div class="category-header">
+                <span>Seeds</span>
+                <span class="plus-icon">+</span>
+              </div>
+              <div class="subcategories">
+                <a href="#">Flower Seeds</a>
+                <a href="#">Vegetable Seeds</a>
+                <a href="#">Herb Seeds</a>
+              </div>
+            </div>
+            <div class="category">
+              <div class="category-header">
+                <span>Bulbs</span>
+                <span class="plus-icon">+</span>
+              </div>
+              <div class="subcategories">
+                <a href="#">Flower Bulbs</a>
+                <a href="#">Vegetable Bulbs</a>
+              </div>
+            </div>
+            <div class="category">
+              <div class="category-header">
+                <span>Pots & Planters</span>
+              </div>
+            </div>
+            <div class="category">
+              <div class="category-header">
+                <span>Plant Nutrition</span>
+              </div>
+            </div>
+            <div class="category">
+              <div class="category-header">
+                <span>Gardening Essentials</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Price Section -->
+        <div class="section">
+          <div class="section-header" data-section="price">
+            <span>PRICE</span>
+            <span class="chevron">▼</span>
+          </div>
+          <div class="section-content" id="price-content">
+            <div class="price-range">
+              <input type="number" placeholder="From" min="0">
+              <span>-</span>
+              <input type="number" placeholder="To" min="0">
+              <button class="go-btn">Go</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Customer Rating Section -->
+        <div class="section">
+          <div class="section-header" data-section="rating">
+            <span>CUSTOMER RATING</span>
+            <span class="chevron">▼</span>
+          </div>
+          <div class="section-content" id="rating-content">
+            <label class="rating-option">
+              <input type="checkbox"> 1★ & above
+            </label>
+            <label class="rating-option">
+              <input type="checkbox"> 2★ & above
+            </label>
+            <label class="rating-option">
+              <input type="checkbox"> 3★ & above
+            </label>
+            <label class="rating-option">
+              <input type="checkbox"> 4★ & above
+            </label>
+            <label class="rating-option">
+              <input type="checkbox"> 5★
+            </label>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main class="main-content">
+        <div class="header">
+          <div class="title">
+            <h1>Air-Purifying Plants</h1>
+            <p>Showing 24 of 142 products</p>
+          </div>
+          <div class="sort-dropdown">
+            <select id="sort-select">
+              <option value="" disabled selected>Sort By</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="name-asc">Name: Ascending</option>
+              <option value="name-desc">Name: Descending</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="products-grid">
+          <!--& Product Card starts -->
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="/Assets/card-img1.jpg"
+                alt="Spider Plant">
+              <span class="discount">55% OFF</span>
+              <!-- <button class="wishlist-btn">♡</button> -->
+              <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></i></button>
+            </div>
+            <div class="product-info">
+              <h3>Spider Indoor Plant</h3>
+              <p class="seller">Pita Putra Nursery</p>
+              <div class="price-row">
+                <div class="price">
+                  <span class="original-price">₹599</span>
+                  <span class="current-price">₹269</span>
+                </div>
+                <button class="add-btn">ADD</button>
+              </div>
+            </div>
+          </div>
+          <!-- & product card ends -->
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="/Assets/card-img1.jpg"
+                alt="Spider Plant">
+              <span class="discount">55% OFF</span>
+              <!-- <button class="wishlist-btn">♡</button> -->
+              <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></i></button>
+            </div>
+            <div class="product-info">
+              <h3>Spider Indoor Plant</h3>
+              <p class="seller">Pita Putra Nursery</p>
+              <div class="price-row">
+                <div class="price">
+                  <span class="original-price">₹599</span>
+                  <span class="current-price">₹269</span>
+                </div>
+                <button class="add-btn">ADD</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="/Assets/card-img1.jpg"
+                alt="Spider Plant">
+              <span class="discount">55% OFF</span>
+              <!-- <button class="wishlist-btn">♡</button> -->
+              <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></i></button>
+            </div>
+            <div class="product-info">
+              <h3>Spider Indoor Plant</h3>
+              <p class="seller">Pita Putra Nursery</p>
+              <div class="price-row">
+                <div class="price">
+                  <span class="original-price">₹599</span>
+                  <span class="current-price">₹269</span>
+                </div>
+                <button class="add-btn">ADD</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="/Assets/card-img1.jpg"
+                alt="Spider Plant">
+              <span class="discount">55% OFF</span>
+              <!-- <button class="wishlist-btn">♡</button> -->
+              <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></i></button>
+            </div>
+            <div class="product-info">
+              <h3>Spider Indoor Plant</h3>
+              <p class="seller">Pita Putra Nursery</p>
+              <div class="price-row">
+                <div class="price">
+                  <span class="original-price">₹599</span>
+                  <span class="current-price">₹269</span>
+                </div>
+                <button class="add-btn">ADD</button>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-image">
+              <img
+                src="/Assets/card-img1.jpg"
+                alt="Spider Plant">
+              <span class="discount">55% OFF</span>
+              <!-- <button class="wishlist-btn">♡</button> -->
+              <button class="wishlist-btn"><i class="fa-regular fa-heart"></i></i></button>
+            </div>
+            <div class="product-info">
+              <h3>Spider Indoor Plant</h3>
+              <p class="seller">Pita Putra Nursery</p>
+              <div class="price-row">
+                <div class="price">
+                  <span class="original-price">₹599</span>
+                  <span class="current-price">₹269</span>
+                </div>
+                <button class="add-btn">ADD</button>
+              </div>
+            </div>
+          </div>
+          <!-- More product cards can be added here -->
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+
+</html>

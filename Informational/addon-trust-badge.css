@@ -1,0 +1,229 @@
+
+
+.trust-badge-wrapper{
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.pw-flex{
+  display: flex;
+  overflow-x: scroll;
+}
+
+/* .pw-flex-wrap{
+  flex-wrap: wrap;
+} */
+
+.pw-gap-1{
+  gap: 1rem;
+}
+
+/* Trust Badge Styles */
+.pw-trust-badge {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pw-bgb-green {
+  background-color: #dcf6e9;
+  border: 1px solid #6bd8a2;
+}
+
+.pw-bgb-green:hover {
+  background-color: #c5edd9;
+}
+
+.pw-bgb-red {
+  background-color: #ffe8e6;
+  border: 1px solid #f7b7b2;
+}
+
+.pw-bgb-red:hover {
+  background-color: #fbd8d6;
+}
+
+.pw-trust-badge-text {
+  font-size: 15px;
+}
+
+/* pw-modal Styles */
+.pw-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  padding: 15px;
+}
+
+.pw-modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.pw-modal {
+  background-color: white;
+  width: 100%;
+  height: fit-content;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+  transform: translateY(-20px);
+  transition: transform 0.3s ease;
+  /* max-height: 60vh; */
+  display: flex;
+  flex-direction: column;
+}
+
+.pw-modal-overlay.active .pw-modal {
+  transform: translateY(0);
+}
+
+.pw-modal-header {
+  padding: 16px 20px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pw-modal-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.pw-modal-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #666;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 0;
+  margin: -5px;
+}
+
+.pw-modal-close:hover {
+  background-color: #f0f0f0;
+}
+
+.pw-modal-body {
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.pw-modal-body p {
+  margin-bottom: 16px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pw-modal-body p:last-child {
+  margin-bottom: 0;
+}
+
+.pw-modal-body .emoji {
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.pw-modal-body .content {
+  flex: 1;
+  min-width: 0;
+}
+
+.pw-modal-body strong {
+  white-space: nowrap;
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.pw-modal-footer {
+  padding: 16px 20px;
+  border-top: 1px solid #eee;
+  text-align: right;
+}
+
+.pw-btn {
+  padding: 8px 16px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+}
+
+.pw-btn:hover {
+  background-color: #1b5e20;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .pw-gap-1{
+    gap: 0.5rem;
+  }
+
+  .pw-trust-badge {
+    padding: 6px 10px;
+  }
+  
+  .pw-trust-badge-text{
+    font-size: 14px;
+  }
+
+  .pw-modal-header {
+    padding: 12px 16px;
+  }
+
+  .pw-modal-body {
+    padding: 16px;
+  }
+
+  .pw-modal-footer {
+    padding: 12px 16px;
+  }
+
+  .pw-modal-title {
+    font-size: 16px;
+  }
+
+  .pw-btn {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
